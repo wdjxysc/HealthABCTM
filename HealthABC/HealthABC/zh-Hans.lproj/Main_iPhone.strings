@@ -1,0 +1,84 @@
+
+/* Class = "IBUILabel"; text = "15817407047"; ObjectID = "5TC-yf-wqR"; */
+"5TC-yf-wqR.text" = "15817407047";
+
+/* Class = "IBUIButton"; normalTitle = "登陆"; ObjectID = "5kM-Yh-mvi"; */
+"5kM-Yh-mvi.normalTitle" = "登陆";
+
+/* Class = "IBUITextField"; placeholder = "输入验证码"; ObjectID = "ApU-xe-NJ7"; */
+"ApU-xe-NJ7.placeholder" = "输入验证码";
+
+/* Class = "IBUITextField"; placeholder = "请输入密码"; ObjectID = "CZO-mv-GNi"; */
+"CZO-mv-GNi.placeholder" = "请输入密码";
+
+/* Class = "IBUIButton"; normalTitle = "没有账号，快速注册"; ObjectID = "GcA-e4-ZqF"; */
+"GcA-e4-ZqF.normalTitle" = "没有账号，快速注册";
+
+/* Class = "IBUILabel"; text = "②输入验证码"; ObjectID = "J4a-2E-C00"; */
+"J4a-2E-C00.text" = "②输入验证码";
+
+/* Class = "IBUIButton"; normalTitle = "完成"; ObjectID = "PvZ-3t-aMd"; */
+"PvZ-3t-aMd.normalTitle" = "完成";
+
+/* Class = "IBUIButton"; normalTitle = "返回"; ObjectID = "T0M-nO-EvX"; */
+"T0M-nO-EvX.normalTitle" = "返回";
+
+/* Class = "IBUIButton"; normalTitle = "下一步"; ObjectID = "UUv-P3-PYe"; */
+"UUv-P3-PYe.normalTitle" = "下一步";
+
+/* Class = "IBUIButton"; normalTitle = "获取短信验证码"; ObjectID = "VuO-IA-fkQ"; */
+"VuO-IA-fkQ.normalTitle" = "获取短信验证码";
+
+/* Class = "IBUILabel"; text = "手机号码"; ObjectID = "WT8-r1-3Ql"; */
+"WT8-r1-3Ql.text" = "手机号码";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "ZgA-di-l4z"; */
+"ZgA-di-l4z.normalTitle" = "Button";
+
+/* Class = "IBUITextField"; placeholder = "请输入手机号/倍泰账号"; ObjectID = "aFF-3T-lVl"; */
+"aFF-3T-lVl.placeholder" = "请输入邮箱";
+
+/* Class = "IBUIButton"; normalTitle = "重新发送验证码"; ObjectID = "aNH-dj-fPn"; */
+"aNH-dj-fPn.normalTitle" = "重新发送验证码";
+
+/* Class = "IBUITextField"; placeholder = "请输入密码"; ObjectID = "b0Z-TP-3el"; */
+"b0Z-TP-3el.placeholder" = "请输入密码";
+
+/* Class = "IBUILabel"; text = "①请输入手机号"; ObjectID = "bCT-hg-aIg"; */
+"bCT-hg-aIg.text" = "①请输入手机号";
+
+/* Class = "IBUILabel"; text = "版本:  0.0.1"; ObjectID = "cKM-Dm-mZ0"; */
+"cKM-Dm-mZ0.text" = "版本:  0.0.1";
+
+/* Class = "IBUITextField"; placeholder = "请输入密码"; ObjectID = "iVU-99-imV"; */
+"iVU-99-imV.placeholder" = "请输入密码";
+
+/* Class = "IBUILabel"; text = "③输入密码"; ObjectID = "jDm-5v-PGx"; */
+"jDm-5v-PGx.text" = "③输入密码";
+
+/* Class = "IBUILabel"; text = ">"; ObjectID = "l5b-gq-uD1"; */
+"l5b-gq-uD1.text" = ">";
+
+/* Class = "IBUILabel"; text = ">"; ObjectID = "oOZ-Ng-9HD"; */
+"oOZ-Ng-9HD.text" = ">";
+
+/* Class = "IBUIButton"; normalTitle = "忘记密码"; ObjectID = "pEp-L6-9VH"; */
+"pEp-L6-9VH.normalTitle" = "忘记密码";
+
+/* Class = "IBUISegmentedControl"; pjS-Ox-ce4.segmentTitles[0] = "First"; ObjectID = "pjS-Ox-ce4"; */
+"pjS-Ox-ce4.segmentTitles[0]" = "First";
+
+/* Class = "IBUISegmentedControl"; pjS-Ox-ce4.segmentTitles[1] = "Second"; ObjectID = "pjS-Ox-ce4"; */
+"pjS-Ox-ce4.segmentTitles[1]" = "Second";
+
+/* Class = "IBUIButton"; normalTitle = "返回"; ObjectID = "rtn-Cv-Cs4"; */
+"rtn-Cv-Cs4.normalTitle" = "返回";
+
+/* Class = "IBUILabel"; text = "账号"; ObjectID = "wpU-pH-NHA"; */
+"wpU-pH-NHA.text" = "账号";
+
+/* Class = "IBUITextField"; placeholder = "请输入手机号码"; ObjectID = "x0a-1F-WuX"; */
+"x0a-1F-WuX.placeholder" = "请输入手机号码";
+
+/* Class = "IBUILabel"; text = "密码"; ObjectID = "yhc-hQ-GnC"; */
+"yhc-hQ-GnC.text" = "密码";

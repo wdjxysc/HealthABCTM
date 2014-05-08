@@ -1,0 +1,165 @@
+/*
+ Localizable.strings
+ HME
+ 
+ Created by 夏 伟 on 13-12-20.
+ Copyright (c) 2013年 夏 伟. All rights reserved.
+ */
+"LOGINLABEL_USERNAME" = "用户名：";
+"LOGINLABEL_PASSWORD" = "密码：";
+"LOGINBUTTON_OK" = "确定";
+"LOGINBUTTON_REGISTER" = "注册";
+"LOGINBUTTON_REMENBER" = "记住密码";
+"LOGINTEXTFIELD_USERNAME" = "请输入用户名";
+"LOGINTEXTFIELD_PASSWORD" = "请输入密码";
+"USER_AGE" = "年龄";
+"USER_BIRTHDAY" = "生日";
+"USER_GENDER" = "性别";
+"USER_HEIGHT" = "身高";
+"USER_WEIGHT" = "体重";
+"USER_FAT" = "脂肪率";
+"USER_MUSCLE" = "肌肉量";
+"USER_WATER" = "水分";
+"USER_VISFAT" = "内脏脂肪";
+"USER_BONE" = "骨量";
+"USER_BMI" = "BMI";
+"USER_BMR" = "BMR";
+"USER_SYS" = "收缩压";
+"USER_DIA" = "舒张压";
+"USER_OXYGEN" = "血氧";
+"USER_PULSE" = "脉搏";
+"USER_GLUCOSE" = "血糖";
+"TEST_TIME" = "测试时间";
+"ENTER" = "进入";
+"ADDNEWUSER" = "新用户";
+"EBELTER_HEALTH_CENTER" = "E健康";
+"BACK" = "返回";
+"SAVE" = "保存";
+"SAVE_FAILED" = "保存失败";
+"SAVE_SUCCESSED" = "保存成功";
+"CANCEL" = "取消";
+"DONE" = "完成";
+"MEASURE" = "测量";
+"HISTORY" = "历史";
+"CHART" = "图表";
+"SETTINGS" = "设置";
+"DATATYPE_WEIGHT" = "体重";
+"DATATYPE_BODYFAT" = "体成分";
+"DATATYPE_BLOODPRESSURE" = "血压";
+"DATATYPE_OXYGEN" = "血氧";
+"DATATYPE_GLUCOSE" = "血糖";
+"USER" = "用户";
+"EDITUSER" = "编辑用户";
+"DELETEUSER" = "删除用户";
+"USERINFO" = "用户信息";
+"USERINFO_NAME" = "姓名";
+"USERINFO_GENDER" = "性别";
+"USERINFO_BRITHDAY" = "生日";
+"USERINFO_AGE" = "年龄";
+"USERINFO_HEIGHT" = "身高";
+"USERINFO_WEIGHT" = "体重";
+"USERINFO_ATHLETICTYPE" = "运动级别";
+"ATHLETICTYPE_NON_ATHLETE" = "脑力劳动者";
+"ATHLETICTYPE_AMATEUR_ATHLETE" = "体力劳动者";
+"ATHLETICTYPE_PROFEESSIONAL_ATHLETE" = "运动员";
+"GENDER_MALE" = "男";
+"GENDER_FEMALE" = "女";
+"OPTIONAL_INFO" = "可选信息";
+"DELETE_USER" = "删除用户";
+"SURE_DELETE_USER" = "确定删除该用户?";
+"YES" = "是";
+"PLEASE_SET_BRITHDAY" = "请设置生日!";
+"NOTICE" = "提示";
+"PLEASE_INPUT_USERNAME" = "请输入用户名!";
+"PLEASE_INPUT_GENDER" = "请输入性别!";
+"PLEASE_INPUT_HEIGHT" = "请输入身高!";
+"PLEASE_INPUT_WEIGHT" = "请输入体重!";
+"PLEASE_INPUT_BRITHDAY" = "请输入生日!";
+"PLEASE_INPUT_ATHLETE_TYPE" = "请输入运动级别!";
+"OK" = "确定";
+"SET_USER_INFO" = "设置用户信息";
+"SET_OPTIONAL_INFO" = "设置可选信息";
+"MEASURE_TYPE_WEIGHT" = "体重";
+"MEASURE_TYPE_BLOODPRESSURE" = "血压";
+"MEASURE_TYPE_BODYFAT" = "体成分";
+"MEASURE_TYPE_OXYGEN" = "血氧";
+"MEASURE_TYPE_GLUCOSE" = "血糖";
+"MEASURE_TYPE_TEMPERATURE" = "体温";
+
+"NOVA_GOTIT" = "Nova_Yes01.wav";
+
+"GET_DATA" = "获取"; //获取数据
+"REPORT" = "建议";   //建议报告
+"ANALYZE" = "分析";  //分析
+"PRESS_UNIT_MMHG" = "毫米汞柱";
+"PULSE_UNIT_BPM" = "博/分";
+"GLUCOSE_UNIT_MGDL" = "毫克/分升";
+"WEIGHT_UNIT_KG" = "千克";
+"WEIGHT_UNIT_LB" = "磅";
+"TEMPERATURE_UNIT_SHESHIDU" = "摄氏度";
+"TEMPERATURE_UNIT_HUASHIDU" = "华氏度";
+"KCAL" = "卡路里";
+"CONFIRM" = "确定";
+"MUST_CHOOSE_ONE_ITEM" = "至少选择一个测量项目！";
+
+"PLEASE_WAITTING" = "请稍候...";
+"LOGIN_SUCCESS" = "登陆成功";
+"LOGIN_FAILED" = "登陆失败";
+
+"LOGIN" = "登录";
+
+"MENU" = "菜单";
+"MY_ACCOUNT" = "我的账号";
+"MEASUREMENT" = "开始测量";
+"MY_HISTORY" = "我的记录";
+"EXIT" = "退出";
+"PLEASE_INPUT_ACCOUNT" = "请输入账号(邮箱)";
+"PLEASE_INPUT_PASSWORD" = "请输入密码";
+"REPEAT_PASSWORD" = "请重复密码";
+"REGIST" = "没有账号？立即注册";
+"FOGET_PASSWORD" = "忘记密码";
+
+"CHANGE_PASSWORD" = "更改密码";
+"Please input the correct format mailbox" = "请输入正确格式的邮箱";
+"GET_FAILED" = "获取失败";
+"INPUT_CHECKCODE" = "输入验证码";
+"CHECK_SUCCESS" = "验证成功";
+"CHECK_FAILED" = "验证失败";
+"REGIST_SUCCESS" = "注册成功";
+"REGIST_FAILED" = "注册失败";
+"EMAIL_HAS_REGISTED" = "邮箱已被注册";
+
+"PLEASE_INPUT_EMAIL" = "输入邮箱";
+"PLEASE_INPUT_CHECKCODE" = "输入验证码";
+"GET_CHECKCODE" = "获取验证码";
+"NEXT" = "下一步";
+"NEW_PASSWORD" = "新密码";
+"INPUT_CANNOT_EMPTY" = "输入不能为空";
+"PASSWPRD_MUST_SAME" = "两次密码必须相同";
+"SET_PASSWORD_SUCCESSED" = "设置密码成功";
+
+"RECENT_WEIGHT" = "您最近测试的体重";
+"RECENT_BLOODPRESS" = "您最近测试的血压";
+"RECENT_FAT" = "您最近测试的体成分(脂肪率)";
+"RECENT_TEMPERATURE" = "您最近测试的体温";
+
+"HealthABC" = "健康ABC";
+
+"BMI_LEVEL_Underweight" = "过轻";
+"BMI_LEVEL_Normal" = "正常";
+"BMI_LEVEL_Overweight" = "过重";
+"BMI_LEVEL_Obesity" = "肥胖";
+"BMI_LEVEL_Severe obesity" = "重度肥胖";
+
+"BLOODPRESS_LEVEL_Low" = "低压";
+"BLOODPRESS_LEVEL_Normal" = "正常";
+"BLOODPRESS_LEVEL_High" = "高压";
+
+"PULSE_LEVEL_Slow" = "心率过缓";
+"PULSE_LEVEL_Normal" = "正常";
+"PULSE_LEVEL_Fast" = "心率过速";
+
+"EARLIER" = "更早";
+"LATER" = "更晚";
+
+"REGISTERED" = "已注册？请登录";

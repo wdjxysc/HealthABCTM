@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetUserInfoViewController">
+            <connections>
+                <outlet property="accountLabel" destination="j8H-dZ-fYz" id="ZQ0-Dq-zAp"/>
+                <outlet property="accountLabel_1" destination="Vi9-bY-fzd" id="pxa-sG-TXR"/>
+                <outlet property="birthdayDatePicker" destination="UwW-qW-2Lb" id="bhK-ml-i1D"/>
+                <outlet property="birthdayLabel_1" destination="Rb3-Wm-xlZ" id="3R4-w9-C3H"/>
+                <outlet property="birthdayNavigationBar" destination="KOe-n6-4fi" id="lU4-eP-WFk"/>
+                <outlet property="birthdayNavigationItem" destination="4Vy-kF-RBf" id="QMg-66-djy"/>
+                <outlet property="birthdayTextField" destination="aiR-hl-K6I" id="Gs9-UT-ChP"/>
+                <outlet property="genderImageView" destination="YwA-FU-CCk" id="6Or-T1-AmS"/>
+                <outlet property="genderLabel_1" destination="0T0-xp-FrM" id="nOo-8C-rHH"/>
+                <outlet property="genderTextField" destination="cjF-VZ-zKi" id="ycB-bF-rlj"/>
+                <outlet property="heightLabel_1" destination="iNS-vx-KPh" id="m8w-GI-LKu"/>
+                <outlet property="heightNavigationBar" destination="NWF-v7-bG0" id="Jus-Y8-LXC"/>
+                <outlet property="heightNavigationItem" destination="vkw-hr-SkM" id="EDC-SP-rY8"/>
+                <outlet property="heightPickerView" destination="FnO-ON-qfV" id="Sfq-Y1-zdO"/>
+                <outlet property="heightTextField" destination="EVE-sH-Mtm" id="xKu-NR-Ufr"/>
+                <outlet property="passwordLabel" destination="q4n-Bx-5oS" id="yHp-1t-Fah"/>
+                <outlet property="passwordLabel_1" destination="Bba-U9-w1q" id="Pvj-P1-xDn"/>
+                <outlet property="profesionTextField" destination="6Au-ku-YdG" id="DBZ-PU-me3"/>
+                <outlet property="professionLabel_1" destination="ldh-Hp-MUg" id="prp-V9-n6V"/>
+                <outlet property="savebtn" destination="VC2-nm-lKs" id="Md9-Rh-2IY"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="weightLabel_1" destination="NOq-xd-YOf" id="lnP-4p-eZR"/>
+                <outlet property="weightNavigationBar" destination="h08-LV-Cdi" id="gHE-ax-fEj"/>
+                <outlet property="weightNavigationItem" destination="8h2-II-3kP" id="fm3-UC-WmE"/>
+                <outlet property="weightPickerView" destination="4uH-Za-aMn" id="C7y-Qc-7vv"/>
+                <outlet property="weightTextField" destination="r99-YP-0fb" id="z5E-zH-h9t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TM_测量背景" translatesAutoresizingMaskIntoConstraints="NO" id="cH8-bB-KkV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TM_defult_userhead" translatesAutoresizingMaskIntoConstraints="NO" id="YwA-FU-CCk">
+                    <rect key="frame" x="22" y="89" width="80" height="80"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="账号:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-bY-fzd">
+                    <rect key="frame" x="107" y="117" width="66" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bba-U9-w1q">
+                    <rect key="frame" x="107" y="138" width="66" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15817407047" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="124" translatesAutoresizingMaskIntoConstraints="NO" id="j8H-dZ-fYz">
+                    <rect key="frame" x="176" y="113" width="124" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="******" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4n-Bx-5oS">
+                    <rect key="frame" x="176" y="138" width="124" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="性别：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0T0-xp-FrM">
+                    <rect key="frame" x="34" y="200" width="84" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="生日：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rb3-Wm-xlZ">
+                    <rect key="frame" x="34" y="239" width="84" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="身高：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNS-vx-KPh">
+                    <rect key="frame" x="34" y="275" width="84" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="体重：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOq-xd-YOf">
+                    <rect key="frame" x="34" y="312" width="84" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="职业：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldh-Hp-MUg">
+                    <rect key="frame" x="34" y="349" width="84" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC2-nm-lKs">
+                    <rect key="frame" x="98" y="394" width="125" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="保存" backgroundImage="按钮1">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveBtnPressed:" destination="-1" eventType="touchUpInside" id="aQC-DB-spU"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TM_settings_line" translatesAutoresizingMaskIntoConstraints="NO" id="h1k-EV-cCE">
+                    <rect key="frame" x="0.0" y="227" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TM_settings_line" translatesAutoresizingMaskIntoConstraints="NO" id="Ua2-K7-HMV">
+                    <rect key="frame" x="0.0" y="266" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TM_settings_line" translatesAutoresizingMaskIntoConstraints="NO" id="mcd-jJ-r46">
+                    <rect key="frame" x="0.0" y="302" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TM_settings_line" translatesAutoresizingMaskIntoConstraints="NO" id="SOB-j9-6by">
+                    <rect key="frame" x="0.0" y="339" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TM_settings_line" translatesAutoresizingMaskIntoConstraints="NO" id="pcC-Ov-69o">
+                    <rect key="frame" x="0.0" y="376" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999973" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="男" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjF-VZ-zKi">
+                    <rect key="frame" x="121" y="201" width="159" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidBeginEditing:" destination="-1" eventType="editingDidBegin" id="QkY-dQ-2qY"/>
+                        <action selector="textFieldDidEndEditing:" destination="-1" eventType="editingDidEnd" id="TzN-7o-BgZ"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999973" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1990-01-01" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aiR-hl-K6I">
+                    <rect key="frame" x="121" y="240" width="159" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidBeginEditing:" destination="-1" eventType="editingDidBegin" id="CC9-HU-1rc"/>
+                        <action selector="textFieldDidEndEditing:" destination="-1" eventType="editingDidEnd" id="5g7-oS-K5X"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999973" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="175(cm)" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EVE-sH-Mtm">
+                    <rect key="frame" x="121" y="276" width="159" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidBeginEditing:" destination="-1" eventType="editingDidBegin" id="LXF-a5-MLR"/>
+                        <action selector="textFieldDidEndEditing:" destination="-1" eventType="editingDidEnd" id="3jS-zT-Sgk"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999973" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="65.0(kg)" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r99-YP-0fb">
+                    <rect key="frame" x="121" y="313" width="159" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidBeginEditing:" destination="-1" eventType="editingDidBegin" id="uAj-8p-41H"/>
+                        <action selector="textFieldDidEndEditing:" destination="-1" eventType="editingDidEnd" id="1nR-so-FvJ"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999973" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="脑力劳动者" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Au-ku-YdG">
+                    <rect key="frame" x="121" y="350" width="159" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidBeginEditing:" destination="-1" eventType="editingDidBegin" id="fNV-ev-iyd"/>
+                        <action selector="textFieldDidEndEditing:" destination="-1" eventType="editingDidEnd" id="25l-RX-QOe"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9B-Mh-OeN">
+                    <rect key="frame" x="98" y="194" width="213" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="inputGenderBtnPressed:" destination="-1" eventType="touchUpInside" id="2Xb-Hm-AlH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKT-Zw-O7o">
+                    <rect key="frame" x="98" y="345" width="213" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="inputProfesionBtnPressed:" destination="-1" eventType="touchUpInside" id="k27-oL-VSR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <navigationBar contentMode="scaleToFill" id="KOe-n6-4fi">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <items>
+                <navigationItem title="生日" id="4Vy-kF-RBf">
+                    <barButtonItem key="leftBarButtonItem" title="取消" id="kNY-M7-Mlg">
+                        <connections>
+                            <action selector="editCancle:" destination="-1" id="uKO-Ys-21x"/>
+                        </connections>
+                    </barButtonItem>
+                    <barButtonItem key="rightBarButtonItem" title="确定" id="Q0j-eA-E3D">
+                        <connections>
+                            <action selector="inputBirthdayDone:" destination="-1" id="hEr-o7-6mN"/>
+                        </connections>
+                    </barButtonItem>
+                </navigationItem>
+            </items>
+        </navigationBar>
+        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="UwW-qW-2Lb">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <date key="date" timeIntervalSinceReferenceDate="408598817.78017497">
+                <!--2013-12-13 03:40:17 +0000-->
+            </date>
+            <timeZone key="timeZone" name="America/Los_Angeles">
+                <data key="data">
+VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
+y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
+5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
+8n/BkPNvwKD0X6OQ9U+ioPY/hZD3L4Sg+CiiEPkPZqD6CIQQ+viDIPvoZhD82GUg/chIEP64RyD/qCoQ
+AJgpIAGIDBACeAsgA3EokARhJ6AFUQqQBkEJoAcw7JAHjUOgCRDOkAmtvyAK8LCQC+CvoAzZzRANwJGg
+DrmvEA+priAQmZEQEYmQIBJ5cxATaXIgFFlVEBVJVCAWOTcQFyk2IBgiU5AZCRggGgI1kBryNKAb4heQ
+HNIWoB3B+ZAesfigH6HbkCB2KyAhgb2QIlYNICNq2hAkNe8gJUq8ECYV0SAnKp4QJ/7toCkKgBAp3s+g
+KupiECu+saAs036QLZ6ToC6zYJAvfnWgMJNCkDFnkiAycySQM0d0IDRTBpA1J1YgNjLokDcHOCA4HAUQ
+OOcaIDn75xA6xvwgO9vJEDywGKA9u6sQPo/6oD+bjRBAb9ygQYSpkEJPvqBDZIuQRC+goEVEbZBF89Mg
+Ry2KEEfTtSBJDWwQSbOXIErtThBLnLOgTNZqkE18laBOtkyQT1x3oFCWLpBRPFmgUnYQkFMcO6BUVfKQ
+VPwdoFY11JBW5TogWB7xEFjFHCBZ/tMQWqT+IFvetRBchOAgXb6XEF5kwiBfnnkQYE3eoGGHlZBiLcCg
+Y2d3kGQNoqBlR1mQZe2EoGcnO5BnzWagaQcdkGmtSKBq5v+Qa5ZlIGzQHBBtdkcgbq/+EG9WKSBwj+AQ
+cTYLIHJvwhBzFe0gdE+kEHT/CaB2OMCQdt7roHgYopB4vs2gefiEkHqer6B72GaQfH6RoH24SJB+XnOg
+f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
+</data>
+            </timeZone>
+        </datePicker>
+        <navigationBar contentMode="scaleToFill" id="NWF-v7-bG0">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <items>
+                <navigationItem title="身高" id="vkw-hr-SkM">
+                    <barButtonItem key="leftBarButtonItem" title="取消" id="Yiz-JY-n6g">
+                        <connections>
+                            <action selector="editCancle:" destination="-1" id="Otq-c3-zkl"/>
+                        </connections>
+                    </barButtonItem>
+                    <barButtonItem key="rightBarButtonItem" title="确定" id="taA-NQ-GSf">
+                        <connections>
+                            <action selector="inputHeightDone:" destination="-1" id="fi3-4o-P8v"/>
+                        </connections>
+                    </barButtonItem>
+                </navigationItem>
+            </items>
+        </navigationBar>
+        <navigationBar contentMode="scaleToFill" id="h08-LV-Cdi">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <items>
+                <navigationItem title="体重" id="8h2-II-3kP">
+                    <barButtonItem key="leftBarButtonItem" title="取消" id="4jQ-QQ-PHD">
+                        <connections>
+                            <action selector="editCancle:" destination="-1" id="rbe-Kb-2tZ"/>
+                        </connections>
+                    </barButtonItem>
+                    <barButtonItem key="rightBarButtonItem" title="确定" id="whZ-av-UjV">
+                        <connections>
+                            <action selector="inputWeightDone:" destination="-1" id="G7f-90-aik"/>
+                        </connections>
+                    </barButtonItem>
+                </navigationItem>
+            </items>
+        </navigationBar>
+        <pickerView contentMode="scaleToFill" id="FnO-ON-qfV">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+        </pickerView>
+        <pickerView contentMode="scaleToFill" id="4uH-Za-aMn">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+        </pickerView>
+    </objects>
+    <resources>
+        <image name="TM_defult_userhead" width="136" height="136"/>
+        <image name="TM_settings_line" width="640" height="1"/>
+        <image name="TM_测量背景" width="640" height="960"/>
+        <image name="按钮1" width="140" height="40"/>
+    </resources>
+</document>

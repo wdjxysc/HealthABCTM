@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdviceViewController">
+            <connections>
+                <outlet property="commAdviceDataLabel" destination="v0S-4e-uee" id="NLm-UX-WJN"/>
+                <outlet property="commAdviceDataYLLabel" destination="srV-kh-gjh" id="iuc-LB-pck"/>
+                <outlet property="commAdviceLabel" destination="aAc-gt-CHS" id="sdx-Hs-zJ0"/>
+                <outlet property="doctorAdviceDataLabel" destination="00d-aU-Ct3" id="Dze-uv-Ix8"/>
+                <outlet property="doctorAdviceDataYLLabel" destination="6af-yW-DsJ" id="Irg-BO-AHF"/>
+                <outlet property="doctorAdviceLabel" destination="kec-MC-0gJ" id="koO-4x-BL1"/>
+                <outlet property="foodAdviceDataLabel" destination="joG-NJ-Xjc" id="2kW-pd-NMx"/>
+                <outlet property="foodAdviceDataYLLabel" destination="jL0-UI-dwD" id="VOj-WA-xaA"/>
+                <outlet property="foodAdviceLabel" destination="Gff-v1-0xd" id="sST-o6-qWq"/>
+                <outlet property="resultDataLabel" destination="jzn-pC-At0" id="fwv-AU-YIw"/>
+                <outlet property="resultLabel" destination="e9K-bP-yuV" id="s27-AH-Xil"/>
+                <outlet property="sportAdviceDataLabel" destination="ikc-cg-wG8" id="D76-Ug-Ber"/>
+                <outlet property="sportAdviceDataYLLabel" destination="zl3-Cs-hPI" id="wwY-Yj-s0r"/>
+                <outlet property="sportAdviceLabel" destination="rfp-qQ-MDj" id="tO7-zt-tJM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="一定要穿暖和，手足温热为标准。防止空调病；停止一切啤酒冷饮、生冷硬食物" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="joG-NJ-Xjc">
+                    <rect key="frame" x="70" y="94" width="230" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.53723883656821925" green="0.76024224234361837" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="低温" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzn-pC-At0">
+                    <rect key="frame" x="70" y="65" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="结果:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9K-bP-yuV">
+                    <rect key="frame" x="20" y="65" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="饮食建议" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="48" translatesAutoresizingMaskIntoConstraints="NO" id="Gff-v1-0xd">
+                    <rect key="frame" x="20" y="94" width="48" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.53723883660000005" green="0.76024224230000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="你可以试着做些轻松的锻炼，不如散步，打台球，等体质恢复了就没有问题" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="ikc-cg-wG8">
+                    <rect key="frame" x="70" y="187" width="230" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.96487331980060076" blue="0.54669509839605002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="运动建议" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="48" translatesAutoresizingMaskIntoConstraints="NO" id="rfp-qQ-MDj">
+                    <rect key="frame" x="20" y="187" width="48" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.96487331980000002" blue="0.54669509839999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="按摩，通过刺激相关穴位，来调整神经内分泌的功能，促进脂肪代谢和分解而且，按摩还有助于促进血液循环，使皮肤的毛细血管扩张，增加局部的体表温度" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="00d-aU-Ct3">
+                    <rect key="frame" x="70" y="280" width="230" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.49158026855397219" green="1" blue="0.51346983670767021" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="医生建议" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="48" translatesAutoresizingMaskIntoConstraints="NO" id="kec-MC-0gJ">
+                    <rect key="frame" x="20" y="280" width="48" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.49158026859999998" green="1" blue="0.51346983670000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="体温低,一般有两个常见原因: 一是生理性的,这种人的基础体温常在36摄氏度左右,并没有出现任何疾病;体温一旦上升到37度,就已经发烧;一般认为基础体温低的人寿命较" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="v0S-4e-uee">
+                    <rect key="frame" x="70" y="373" width="230" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.96151717417125326" green="0.54156858631393612" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日常建议" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="48" translatesAutoresizingMaskIntoConstraints="NO" id="aAc-gt-CHS">
+                    <rect key="frame" x="20" y="373" width="48" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.96151717420000005" green="0.54156858630000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jL0-UI-dwD" customClass="YLLabel">
+                    <rect key="frame" x="70" y="94" width="230" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.53723883660000005" green="0.76024224230000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-Cs-hPI" customClass="YLLabel">
+                    <rect key="frame" x="70" y="187" width="230" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.96487331980000002" blue="0.54669509839999997" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6af-yW-DsJ" customClass="YLLabel">
+                    <rect key="frame" x="70" y="280" width="230" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.49158026859999998" green="1" blue="0.51346983670000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="srV-kh-gjh" customClass="YLLabel">
+                    <rect key="frame" x="70" y="373" width="230" height="85"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.96151717420000005" green="0.54156858630000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <view contentMode="scaleToFill" id="bOM-q3-RYA" customClass="YLLabel">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+</document>
