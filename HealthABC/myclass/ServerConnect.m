@@ -500,7 +500,8 @@
         NSMutableArray *weightDataArray = (NSMutableArray *)[dic valueForKey:@"weightdata"];
         
         if(weightDataArray != nil){
-            [[MySingleton sharedSingleton].nowuserinfo setObject:weightDataArray forKey:@"UserWeightDataArray"];
+            NSMutableArray *array = [self dateDesArray:weightDataArray]; //按时间降序排列
+            [[MySingleton sharedSingleton].nowuserinfo setObject:array forKey:@"UserWeightDataArray"];
         }
         
         //        NSLog(@"建议: %@",[dicweightdataArray0 valueForKey:@"advice"]);
@@ -539,7 +540,8 @@
         NSMutableArray *bodyfatDataArray = (NSMutableArray *)[dic valueForKey:@"bodyCompositondata"];
         
         if(bodyfatDataArray != nil){
-            [[MySingleton sharedSingleton].nowuserinfo setObject:bodyfatDataArray forKey:@"UserBodyFatDataArray"];
+            NSMutableArray *array = [self dateDesArray:bodyfatDataArray]; //按时间降序排列
+            [[MySingleton sharedSingleton].nowuserinfo setObject:array forKey:@"UserBodyFatDataArray"];
         }
         
         //        NSLog(@"%@",bodyFatDataArray);
@@ -594,7 +596,8 @@
         NSMutableArray *bloodpressDataArray = (NSMutableArray *)[dic valueForKey:@"bloodPressData"];
         
         if(bloodpressDataArray != nil){
-            [[MySingleton sharedSingleton].nowuserinfo setObject:bloodpressDataArray forKey:@"UserBloodpressDataArray"];
+            NSMutableArray *array = [self dateDesArray:bloodpressDataArray]; //按时间降序排列
+            [[MySingleton sharedSingleton].nowuserinfo setObject:array forKey:@"UserBloodpressDataArray"];
         }
         
         //        NSLog(@"%@",bloodPressureDataArray);
@@ -644,7 +647,8 @@
         NSMutableArray *temperatrueDataArray = (NSMutableArray *)[dic valueForKey:@"temperaturedata"];
         
         if(temperatrueDataArray != nil){
-            [[MySingleton sharedSingleton].nowuserinfo setObject:temperatrueDataArray forKey:@"UserTemperatureDataArray"];
+            NSMutableArray *array = [self dateDesArray:temperatrueDataArray]; //按时间降序排列
+            [[MySingleton sharedSingleton].nowuserinfo setObject:array forKey:@"UserTemperatureDataArray"];
         }
         //        NSLog(@"%@",temperatureDataArray);
         //
@@ -669,6 +673,35 @@
     
 }
 
+//按时间降序排列
++(NSMutableArray *)dateDesArray:(NSArray *)array
+{
+    NSMutableArray *result = [[NSMutableArray alloc]initWithArray:array];
+    if([result count] <2)
+    {
+        return result;
+    }
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    for(int i = (int)[result count] - 1; i > 0; i--)
+    {
+        for(int j = 0; j<i; j++)
+        {
+            NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+            [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+            NSDate *datej = [formatter dateFromString:[result[j] valueForKey:@"date"]];
+            NSDate *datej1 = [formatter dateFromString:[result[j + 1] valueForKey:@"date"]];
+            if(datej > datej1)
+            {
+                NSObject *tempj1 = result[j + 1];
+                result[j+1] = result[j];
+                result[j] = tempj1;
+            }
+        }
+    }
+    return result;
+}
 
 
 
