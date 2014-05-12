@@ -692,7 +692,7 @@
             [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
             NSDate *datej = [formatter dateFromString:[result[j] valueForKey:@"date"]];
             NSDate *datej1 = [formatter dateFromString:[result[j + 1] valueForKey:@"date"]];
-            if(datej > datej1)
+            if(datej < datej1)
             {
                 NSObject *tempj1 = result[j + 1];
                 result[j+1] = result[j];
