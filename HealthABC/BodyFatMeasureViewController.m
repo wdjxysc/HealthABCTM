@@ -196,7 +196,7 @@
     
     
     // Ok, it's in range - have we already seen it?
-    if([peripheral.name isEqual: @"eBody-Scale"]||[peripheral.name isEqual: @"eBody-Fat"]||[peripheral.name isEqualToString:@"eBody-Fat-Analyzer"])
+    if([peripheral.name isEqual:@"eBody-Fat-Scale"]||[peripheral.name isEqualToString:@"eBody-Fat-Analyzer"])
     {
         if (self.discoveredPeripheral != peripheral) {
             

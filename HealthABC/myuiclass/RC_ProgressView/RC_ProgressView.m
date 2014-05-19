@@ -48,23 +48,23 @@
 -(void)setProgressValue:(float)value
 {
     if(self.valueType == yValue){
-    [self.mainImageView setFrame:CGRectMake(0, self.frame.size.height*(1-self.oldValue), self.frame.size.width, self.frame.size.height*self.oldValue)];
-    
-    [UIView beginAnimations:@"myImageViewAnimation" context:(__bridge void *)self.mainImageView];
-    
-    [UIView setAnimationDuration:0.5f];
-    
-    [UIView setAnimationDelegate:self];
-    //延迟动画时间
-//    [UIView setAnimationDelay:3.0f];
-    //重复动画次数
-//    [UIView setAnimationRepeatCount:4.0f];
-    
-    [UIView setAnimationDidStopSelector:@selector(imageViewDidStop:finished:context:)];
-    
-    [self.mainImageView setFrame:CGRectMake(0, self.frame.size.height*(1-value), self.frame.size.width, self.frame.size.height*value)];
-    
-    [UIView commitAnimations];
+        [self.mainImageView setFrame:CGRectMake(0, self.frame.size.height*(1-self.oldValue), self.frame.size.width, self.frame.size.height*self.oldValue)];
+        
+        [UIView beginAnimations:@"myImageViewAnimation" context:(__bridge void *)self.mainImageView];
+        
+        [UIView setAnimationDuration:0.5f];
+        
+        [UIView setAnimationDelegate:self];
+        //延迟动画时间
+        //    [UIView setAnimationDelay:3.0f];
+        //重复动画次数
+        //    [UIView setAnimationRepeatCount:4.0f];
+        
+        [UIView setAnimationDidStopSelector:@selector(imageViewDidStop:finished:context:)];
+        
+        [self.mainImageView setFrame:CGRectMake(0, self.frame.size.height*(1-value), self.frame.size.width, self.frame.size.height*value)];
+        
+        [UIView commitAnimations];
     }
     else if(self.valueType == xValue)
     {

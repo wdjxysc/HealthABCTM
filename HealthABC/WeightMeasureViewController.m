@@ -612,7 +612,9 @@
     NSString *result = [dicadvice valueForKey:@"result"];
     
     _tipsDataLabel.text = [[NSString alloc]initWithFormat:@"    %@",commSuggestion];
-    _bmiResultLabel.text = [[NSString alloc]initWithFormat:@"%@",result];
+    if([dicadvice valueForKey:@"result"] != nil){
+        _bmiResultLabel.text = [[NSString alloc]initWithFormat:@"%@",result];
+    }
 }
 
 

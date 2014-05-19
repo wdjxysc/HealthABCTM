@@ -545,11 +545,11 @@
     self.nowBeginTime = begintime;
     self.nowEndTime = endtime;
     
-    LineChartData *temperatureline = [self getFatLine:@"adiposerate" title:NSLocalizedString(@"USER_FAT", nil) linecolor:[UIColor colorWithRed:0xf6/255.0 green:0xff/255.0 blue:0x64/255.0 alpha:1.0] begintime:begintime endtime:endtime];
+    LineChartData *temperatureline = [self getFatLine:@"visceralfat" title:NSLocalizedString(@"USER_VISFAT", nil) linecolor:[UIColor colorWithRed:0xf6/255.0 green:0xff/255.0 blue:0x64/255.0 alpha:1.0] begintime:begintime endtime:endtime];
     _myLineChartView = [[LineChartView alloc] initWithFrame:myChartFrame];
     _myLineChartView.yMin = 0;
-    _myLineChartView.yMax = 100;
-    _myLineChartView.ySteps = @[@"0%",@"20",@"40",@"60",@"80",@"100"];
+    _myLineChartView.yMax = 25;
+    _myLineChartView.ySteps = @[@"0",@"5",@"10",@"15",@"20",@"25"];
     _myLineChartView.data = @[temperatureline];
     _myLineChartView.backgroundColor = [UIColor clearColor];
     
@@ -669,8 +669,11 @@
     self.nowBeginTime = begintime;
     self.nowEndTime = endtime;
     
-    LineChartData *sysline = [self getBloodPressLine:@"systolic" title:NSLocalizedString(@"USER_SYS", nil) linecolor:[UIColor colorWithRed:0xf6/255.0 green:0xff/255.0 blue:0x64/255.0 alpha:1.0] begintime:begintime endtime:endtime];
-    LineChartData *dialine = [self getBloodPressLine:@"diastolic" title:NSLocalizedString(@"USER_DIA", nil) linecolor:[UIColor colorWithRed:0x6a/255.0 green:0xff/255.0 blue:0x8d/255.0 alpha:1.0] begintime:begintime endtime:endtime];
+//    LineChartData *sysline = [self getBloodPressLine:@"systolic" title:NSLocalizedString(@"USER_SYS", nil) linecolor:[UIColor colorWithRed:0xf6/255.0 green:0xff/255.0 blue:0x64/255.0 alpha:1.0] begintime:begintime endtime:endtime];
+//    LineChartData *dialine = [self getBloodPressLine:@"diastolic" title:NSLocalizedString(@"USER_DIA", nil) linecolor:[UIColor colorWithRed:0x6a/255.0 green:0xff/255.0 blue:0x8d/255.0 alpha:1.0] begintime:begintime endtime:endtime];
+    LineChartData *sysline = [self getBloodPressLine:@"systolic" title:NSLocalizedString(@"USER_SYS", nil) linecolor:[UIColor yellowColor] begintime:begintime endtime:endtime];
+    LineChartData *dialine = [self getBloodPressLine:@"diastolic" title:NSLocalizedString(@"USER_DIA", nil) linecolor:[UIColor blueColor] begintime:begintime endtime:endtime];
+    
     _myLineChartView = [[LineChartView alloc] initWithFrame:myChartFrame];
     _myLineChartView.yMin = 0;
     _myLineChartView.yMax = 200;
