@@ -506,14 +506,22 @@
         }
         NSUInteger row = [indexPath row];
         NSDictionary *rowData = [self.dataArray objectAtIndex:row];
+        if([rowData objectForKey:@"date"] != [NSNull null])
         cell.testtimeDataLabel.text = [[NSString alloc] initWithFormat:@"%@",[rowData objectForKey:@"date"]];
-        
+        if([rowData objectForKey:@"weight"] != [NSNull null])
         cell.weightDataLabel.text = [[NSString alloc] initWithFormat:@"%.1fkg",[[rowData objectForKey:@"weight"] floatValue]];
+        if([rowData objectForKey:@"adiposerate"] != [NSNull null])
         cell.bodyfatDataLabel.text = [[NSString alloc] initWithFormat:@"%.1f%%",[[rowData objectForKey:@"adiposerate"] floatValue]];
+        if([rowData objectForKey:@"muscle"] != [NSNull null])
         cell.muscleDataLabel.text = [[NSString alloc] initWithFormat:@"%.1f%%",[[rowData objectForKey:@"muscle"] floatValue]];
+//        NSLog(@"%@",[[rowData valueForKey:@"moisture"] stringValue]);
+        if([rowData objectForKey:@"moisture"] != [NSNull null])
         cell.waterDataLabel.text = [[NSString alloc] initWithFormat:@"%.1f%%",[[rowData objectForKey:@"moisture"] floatValue]];
+        if([rowData objectForKey:@"bone"] != [NSNull null])
         cell.boneDataLabel.text = [[NSString alloc] initWithFormat:@"%.1fkg",[[rowData objectForKey:@"bone"] floatValue]];
+        if([rowData objectForKey:@"visceralfat"] != [NSNull null])
         cell.visfatDataLabel.text = [[NSString alloc] initWithFormat:@"%d",[[rowData objectForKey:@"visceralfat"] intValue]];
+        if([rowData objectForKey:@"bmi"] != [NSNull null])
         cell.bmiDataLabel.text = [[NSString alloc] initWithFormat:@"%.1f",[[rowData objectForKey:@"bmi"] floatValue]];
         if([rowData objectForKey:@"thermal"] != nil){
             cell.kcalDataLabel.text = [[NSString alloc] initWithFormat:@"%dkcal",[[rowData objectForKey:@"thermal"] intValue]];

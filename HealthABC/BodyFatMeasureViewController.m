@@ -648,7 +648,7 @@
     
     
     _tipsDataLabel.text = [[NSString alloc]initWithFormat:@"    %@%@",doctorSuggestion,commSuggestion];
-    _bmiResultLabel.text = [[NSString alloc]initWithFormat:@"%@",dicresult];
+    //_bmiResultLabel.text = [[NSString alloc]initWithFormat:@"%@",dicresult];
 }
 
 

@@ -609,10 +609,10 @@
 //    NSString *sportSuggestion = [dicadvice valueForKey:@"sportSuggestion"];
 //    NSString *doctorSuggestion = [dicadvice valueForKey:@"doctorSuggestion"];
     NSString *commSuggestion = [dicadvice valueForKey:@"commSuggestion"];
-    NSString *result = [dicadvice valueForKey:@"result"];
+    NSString *result = [dic valueForKey:@"result"];
     
     _tipsDataLabel.text = [[NSString alloc]initWithFormat:@"    %@",commSuggestion];
-    if([dicadvice valueForKey:@"result"] != nil){
+    if(result != nil){
         _bmiResultLabel.text = [[NSString alloc]initWithFormat:@"%@",result];
     }
 }

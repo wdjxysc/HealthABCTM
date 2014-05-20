@@ -545,6 +545,7 @@
     self.nowBeginTime = begintime;
     self.nowEndTime = endtime;
     
+    //获取内脏脂肪等级曲线数据
     LineChartData *temperatureline = [self getFatLine:@"visceralfat" title:NSLocalizedString(@"USER_VISFAT", nil) linecolor:[UIColor colorWithRed:0xf6/255.0 green:0xff/255.0 blue:0x64/255.0 alpha:1.0] begintime:begintime endtime:endtime];
     _myLineChartView = [[LineChartView alloc] initWithFrame:myChartFrame];
     _myLineChartView.yMin = 0;

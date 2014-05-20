@@ -75,10 +75,13 @@
 {
     if([[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserWeightDataArray"] != nil && [[[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserWeightDataArray"] count] != 0)
     _recentWeightDataLabel.text = [[NSString alloc]initWithFormat:@"上次称重%.1f kg",[[[[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserWeightDataArray"][0] valueForKey:@"weight"] floatValue]];
+    
     if([[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserBodyFatDataArray"] != nil && [[[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserBodyFatDataArray"] count] != 0)
     _bodyfatRecentDataLabel.text = [[NSString alloc]initWithFormat:@"上次脂肪率%.1f %%",[[[[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserBodyFatDataArray"][0] valueForKey:@"adiposerate"] floatValue]];
+    
     if([[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserBloodpressDataArray"] != nil && [[[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserBloodpressDataArray"] count] != 0)
     _bloodpressRecentDataLabel.text = [[NSString alloc]initWithFormat:@"上次血压%d/%d mmHg",[[[[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserBloodpressDataArray"][0] valueForKey:@"systolic"] intValue],[[[[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserBloodpressDataArray"][0] valueForKey:@"diastolic"] intValue]];
+    
     if([[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserTemperatureDataArray"] != nil && [[[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserTemperatureDataArray"] count] != 0)
     _tempRecentDataLabel.text = [[NSString alloc]initWithFormat:@"上次体温%.1f ℃",[[[[MySingleton sharedSingleton].nowuserinfo valueForKey:@"UserTemperatureDataArray"][0] valueForKey:@"temperature"] floatValue]];
 }
