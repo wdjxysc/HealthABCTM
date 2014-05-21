@@ -129,7 +129,13 @@
 		64C4A89418586F5E00B9D020 /* SetUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C4A89218586F5E00B9D020 /* SetUserInfoViewController.xib */; };
 		64C4A89E185C01F300B9D020 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 64C4A89B185C01F300B9D020 /* SVProgressHUD.bundle */; };
 		64C4A89F185C01F300B9D020 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C4A89D185C01F300B9D020 /* SVProgressHUD.m */; };
-		64CBB3A61929A3D100107AB0 /* RC_LineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CBB3A51929A3D100107AB0 /* RC_LineChartView.m */; };
+		64F1059F192C488D00412D6B /* libPushSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F1059E192C488D00412D6B /* libPushSDK.a */; };
+		64F105A1192C49CC00412D6B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F105A0192C49CC00412D6B /* CFNetwork.framework */; };
+		64F105A3192C49DE00412D6B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F105A2192C49DE00412D6B /* CoreTelephony.framework */; };
+		64F105A5192C49EC00412D6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F105A4192C49EC00412D6B /* SystemConfiguration.framework */; };
+		64F105A7192C49FE00412D6B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F105A6192C49FE00412D6B /* Security.framework */; };
+		64F105A9192C4A0700412D6B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F105A8192C4A0700412D6B /* libz.dylib */; };
+		64F105AB192C534A00412D6B /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64F105AA192C534A00412D6B /* PushConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -341,8 +347,14 @@
 		64C4A89B185C01F300B9D020 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		64C4A89C185C01F300B9D020 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		64C4A89D185C01F300B9D020 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		64CBB3A41929A3D100107AB0 /* RC_LineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RC_LineChartView.h; path = RC_Chart/RC_LineChartView.h; sourceTree = "<group>"; };
-		64CBB3A51929A3D100107AB0 /* RC_LineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RC_LineChartView.m; path = RC_Chart/RC_LineChartView.m; sourceTree = "<group>"; };
+		64F1059D192C488D00412D6B /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APService.h; path = JPushlib/APService.h; sourceTree = "<group>"; };
+		64F1059E192C488D00412D6B /* libPushSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPushSDK.a; path = JPushlib/libPushSDK.a; sourceTree = "<group>"; };
+		64F105A0192C49CC00412D6B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		64F105A2192C49DE00412D6B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		64F105A4192C49EC00412D6B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		64F105A6192C49FE00412D6B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		64F105A8192C4A0700412D6B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		64F105AA192C534A00412D6B /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,10 +362,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F105A9192C4A0700412D6B /* libz.dylib in Frameworks */,
+				64F105A7192C49FE00412D6B /* Security.framework in Frameworks */,
+				64F105A5192C49EC00412D6B /* SystemConfiguration.framework in Frameworks */,
+				64F105A3192C49DE00412D6B /* CoreTelephony.framework in Frameworks */,
+				64F105A1192C49CC00412D6B /* CFNetwork.framework in Frameworks */,
 				64A5F9FF18497FB300BC8A25 /* libsqlite3.dylib in Frameworks */,
 				64A5F9FD18497C7100BC8A25 /* CoreBluetooth.framework in Frameworks */,
 				64A208A2183F4ADF0056513E /* Accelerate.framework in Frameworks */,
 				64A208A1183F4AD80056513E /* CoreGraphics.framework in Frameworks */,
+				64F1059F192C488D00412D6B /* libPushSDK.a in Frameworks */,
 				64A208A0183F4AC60056513E /* UIKit.framework in Frameworks */,
 				64A2089E183F4AB30056513E /* Foundation.framework in Frameworks */,
 				64A2089D183F4AA70056513E /* QuartzCore.framework in Frameworks */,
@@ -397,7 +415,7 @@
 		647352F2183DE45100825D75 = {
 			isa = PBXGroup;
 			children = (
-				64CBB3A31929A35500107AB0 /* RC_Chart */,
+				64F1059C192C487200412D6B /* JPushlib */,
 				64A0F80B190CA6CC00E7C47B /* font */,
 				64A2E86F18E2B9A300F31B2E /* dbclass */,
 				64B2C7E018DFCF8B00DD59DD /* bleclass */,
@@ -426,6 +444,11 @@
 		647352FD183DE45100825D75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				64F105A8192C4A0700412D6B /* libz.dylib */,
+				64F105A6192C49FE00412D6B /* Security.framework */,
+				64F105A4192C49EC00412D6B /* SystemConfiguration.framework */,
+				64F105A2192C49DE00412D6B /* CoreTelephony.framework */,
+				64F105A0192C49CC00412D6B /* CFNetwork.framework */,
 				64A5F9FE18497FB300BC8A25 /* libsqlite3.dylib */,
 				64A5F9FC18497C7100BC8A25 /* CoreBluetooth.framework */,
 				64A2089C183F4AA70056513E /* QuartzCore.framework */,
@@ -461,6 +484,7 @@
 				6473530A183DE45100825D75 /* main.m */,
 				6473530C183DE45100825D75 /* HealthABC-Prefix.pch */,
 				6428905D185EED6C0074AEBC /* Localizable.strings */,
+				64F105AA192C534A00412D6B /* PushConfig.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -774,13 +798,13 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		64CBB3A31929A35500107AB0 /* RC_Chart */ = {
+		64F1059C192C487200412D6B /* JPushlib */ = {
 			isa = PBXGroup;
 			children = (
-				64CBB3A41929A3D100107AB0 /* RC_LineChartView.h */,
-				64CBB3A51929A3D100107AB0 /* RC_LineChartView.m */,
+				64F1059D192C488D00412D6B /* APService.h */,
+				64F1059E192C488D00412D6B /* libPushSDK.a */,
 			);
-			name = RC_Chart;
+			name = JPushlib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -879,6 +903,7 @@
 				64A0F80D190CA74D00E7C47B /* FZNBSJW.TTF in Resources */,
 				64B2C7F218E03E8300DD59DD /* HistoryViewController.xib in Resources */,
 				64A3602218ED10F80005499D /* LoginViewController.xib in Resources */,
+				64F105AB192C534A00412D6B /* PushConfig.plist in Resources */,
 				64AA762018E5596500C5C990 /* TemperatureViewController.xib in Resources */,
 				64382109190B64E200DA71DB /* HistoryViewControllerTM_4Inch.xib in Resources */,
 				64A5F9F41845E5CE00BC8A25 /* ChooseItemViewController.xib in Resources */,
@@ -964,7 +989,6 @@
 				641C1D83190A062F00D18BE1 /* SettingsViewControllerTM.m in Sources */,
 				64B2C7A918DFCE8000DD59DD /* XmlTool.m in Sources */,
 				64B2C7C718DFCEFC00DD59DD /* NSDate+Additions.m in Sources */,
-				64CBB3A61929A3D100107AB0 /* RC_LineChartView.m in Sources */,
 				64A1504318F5292A00C00065 /* ChartViewController.m in Sources */,
 				641C1D74190A01F700D18BE1 /* ChooseItemControllerTM.m in Sources */,
 				64B7A3DB18EC1D720032CFFC /* CheckCodeViewController.m in Sources */,
@@ -1148,7 +1172,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HealthABC/HealthABC-Prefix.pch";
 				INFOPLIST_FILE = "HealthABC/HealthABC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JPushlib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1170,7 +1198,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HealthABC/HealthABC-Prefix.pch";
 				INFOPLIST_FILE = "HealthABC/HealthABC-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JPushlib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
