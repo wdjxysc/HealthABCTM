@@ -41,6 +41,7 @@
     [defaultCenter addObserver:self selector:@selector(networkDidRegister:) name:kAPNetworkDidRegisterNotification object:nil];
     [defaultCenter addObserver:self selector:@selector(networkDidLogin:) name:kAPNetworkDidLoginNotification object:nil];
     [defaultCenter addObserver:self selector:@selector(networkDidReceiveMessage:) name:kAPNetworkDidReceiveMessageNotification object:nil];
+    [defaultCenter addObserver:self selector:@selector(networkError:) name:kAPServiceErrorNotification object:nil];
     
     [self.window makeKeyAndVisible];
     
@@ -49,7 +50,7 @@
                                                    UIRemoteNotificationTypeAlert)];
     [APService setupWithOption:launchOptions];
     
-    [APService setTags:[NSSet setWithObjects:@"tag1", @"tag2", @"tag3", nil] alias:@"别名"];
+//    [APService setTags:[NSSet setWithObjects:@"tag1", @"tag2", @"tag3", nil] alias:@"别名"];
     
     [APService setTags:[NSSet setWithObjects:@"tag4", @"tag5", @"tag6", nil] alias:@"别名" callbackSelector:@selector(tagsAliasCallback:tags:alias:) target:self];
     
@@ -122,6 +123,10 @@
     NSLog(@"已登录");
 }
 
+- (void)networkError:(NSNotification *)notification {
+    NSLog(@"错误:%@",notification);
+}
+
 - (void)networkDidReceiveMessage:(NSNotification *)notification {
     NSDictionary * userInfo = [notification userInfo];
     NSString *title = [userInfo valueForKey:@"title"];
@@ -131,6 +136,7 @@
     [dateFormatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
     
 //    [_infoLabel setText:[NSString stringWithFormat:@"收到消息\ndate:%@\ntitle:%@\ncontent:%@", [dateFormatter stringFromDate:[NSDate date]],title,content]];
+    NSLog(@"%@",[NSString stringWithFormat:@"收到消息\ndate:%@\ntitle:%@\ncontent:%@", [dateFormatter stringFromDate:[NSDate date]],title,content]);
 }
 
 - (void)tagsAliasCallback:(int)iResCode tags:(NSSet*)tags alias:(NSString*)alias {

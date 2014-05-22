@@ -363,15 +363,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				64F105A9192C4A0700412D6B /* libz.dylib in Frameworks */,
+				64A5F9FF18497FB300BC8A25 /* libsqlite3.dylib in Frameworks */,
+				64F1059F192C488D00412D6B /* libPushSDK.a in Frameworks */,
 				64F105A7192C49FE00412D6B /* Security.framework in Frameworks */,
 				64F105A5192C49EC00412D6B /* SystemConfiguration.framework in Frameworks */,
 				64F105A3192C49DE00412D6B /* CoreTelephony.framework in Frameworks */,
 				64F105A1192C49CC00412D6B /* CFNetwork.framework in Frameworks */,
-				64A5F9FF18497FB300BC8A25 /* libsqlite3.dylib in Frameworks */,
 				64A5F9FD18497C7100BC8A25 /* CoreBluetooth.framework in Frameworks */,
 				64A208A2183F4ADF0056513E /* Accelerate.framework in Frameworks */,
 				64A208A1183F4AD80056513E /* CoreGraphics.framework in Frameworks */,
-				64F1059F192C488D00412D6B /* libPushSDK.a in Frameworks */,
 				64A208A0183F4AC60056513E /* UIKit.framework in Frameworks */,
 				64A2089E183F4AB30056513E /* Foundation.framework in Frameworks */,
 				64A2089D183F4AA70056513E /* QuartzCore.framework in Frameworks */,
@@ -856,6 +856,11 @@
 				TargetAttributes = {
 					647352FA183DE45100825D75 = {
 						DevelopmentTeam = 67SXPTKEK8;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					6473531E183DE45200825D75 = {
 						TestTargetID = 647352FA183DE45100825D75;
